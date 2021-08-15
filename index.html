@@ -6,17 +6,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
         <title>Hlegas</title>
     </head>
     <body>
-        <header class="header flex">
+        <header class="header flex container">
             <nav class="flex row nav__top">
                 <ul class="flex row">
                     <li class="active">ук</li>
                     <li>ру</li>
                     <li>en</li>
                 </ul>
-                <a href="#">+38 (050) 390 15 95</a>
+                <address>
+                    <span class="address-top">Одеса, Адміральський пр., 3</span>
+                    <a href="#" class="top-number">+38 (050) 390 15 95</a>
+                    <span class="address-top-icon"
+                        ><i class="fab fa-facebook"></i
+                    ></span>
+                </address>
             </nav>
             <div class="logo__top">
                 <svg
@@ -131,7 +141,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="container">
             <div class="top__content">
                 <div class="top__gradient">
                     <div class="banner flex">
@@ -166,11 +176,15 @@
                     </div>
                 </div>
                 <div class="services__block">
-                    <div class="service">
-                        <a class="service__link" href="#"><p>послуги</p></a>
+                    <div class="servise-top-title">
+                    <a class="service__link" href="#"><p>послуги</p></a>
                         <strong class="about__us"
                             >Що ми вміємо робити краще за інших?</strong
                         >
+                    </div>
+                        <div class="service-list">
+                    <div class="service">
+                        
                         <div class="service__title">
                             <div class="logo flex">
                                 <img
@@ -299,8 +313,10 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
             <div class="team__block">
+                <img src="images/image.png" alt="Alex">
                 <div class="team__item">
                     <a class="team__link" href="#"><p>команда</p></a>
                     <strong class="team__title"
@@ -327,39 +343,39 @@
                     <h3>Успішні кейси</h3>
                 </div>
                 <div class="case-list">
-                    <div class="case-item">
+                    <div class="case-item hillel-case">
                         <p>
                             Супровід проекту з купівлі-продажу
                             сільськогосподарської продукції
                         </p>
                         <span class="case-item__company">Hillel IT School</span>
                     </div>
-                    <div class="case-item">
+                    <div class="case-item wannabiz-case">
                         <p>
                             Підготовка комплексного юридичного висновку для
                             європейського банку
                         </p>
                         <span class="case-item__company">WannaBiz</span>
                     </div>
-                    <div class="case-item">
+                    <div class="case-item tapgerine-case">
                         <p>
                             Супровід проекту з купівлі-продажу
                             сільськогосподарської продукції
                         </p>
                         <span class="case-item__company">tapgerine</span>
                     </div>
-                    <div class="case-item">
+                    <div class="case-item look-case">
                         <p>
                             Представництво інтересів великого зернотрейдера в
                             податковому спорі
                         </p>
                         <span class="case-item__company">3D LOOK</span>
                     </div>
-                    <div class="case-item">
+                    <div class="case-item adtelligent-case">
                         <p>Оскарження податкових повідомлень-рішень ДФС</p>
                         <span class="case-item__company">adtelligent</span>
                     </div>
-                    <div class="case-item">
+                    <div class="case-item ckliky-case">
                         <p>
                             Супровід проекту з кредитування агротрейдерів
                             мальтійським банком
@@ -438,7 +454,47 @@
                     </div>
                 </div>
             </div>
+            <div class="news flex">
+                <strong class="news-title">Нам є що розповісти</strong>
+                <div class="news-list flex column">
+                    <div class="news-item">
+                        <div class="news-item__text">
+                            <h4>
+                                Валютний контроль помер, хай живе валютний
+                                контроль!
+                            </h4>
+                            <span class="date">14 червня</span>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="images/firstmassage.png" alt="massage" />
+                        <div class="news-item__text">
+                            <h4>Equity associate</h4>
+                            <span class="date">22 квітня</span>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="images/secondmassage.png" alt="massage" />
+                        <div class="news-item__text">
+                            <h4>Заповіт міленіала</h4>
+                            <span class="date">19 серпня</span>
+                        </div>
+                    </div>
+                    <button class="news-button">Ще публікації</button>
+                </div>
+            </div>
         </main>
-        <footer></footer>
+        <footer class="flex column">
+            <address class="flex column">
+                <a href="#" class="odessa">Одеса, Адміральський пр., 3</a>
+                <a href="#" class="footer-item">Подивитися на мапі</a>
+                <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="address-item odessa">+38 (050) 390 15 91</a>
+                <a href="#" class="address-item">contact@hlegals.net</a>
+            </address>
+            <span class="copyrights"
+                >© 2021 ТОВ Юридична компанія «HLEGALS»</span
+            >
+        </footer>
     </body>
 </html>
