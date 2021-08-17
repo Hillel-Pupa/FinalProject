@@ -1,3 +1,5 @@
+@import "./about.css";
+
 @font-face {
     font-family: "TTNorms";
     src: url("fonts/TTNorms-Medium.woff"), url("fonts/TTNorms-Medium.woff2");
@@ -25,6 +27,7 @@
     font-style: normal;
     font-weight: 700;
 }
+
 *,
 *:before,
 *:after {
@@ -39,6 +42,12 @@ img {
 body {
     font-family: "TTNorms", sans-serif;
     font-weight: 600;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 40px;
 }
 
 h2 {
@@ -106,6 +115,14 @@ ul li {
     text-decoration: none;
 }
 
+span.address-top-icon {
+    display: none;
+}
+
+span.address-top {
+    display: none;
+}
+
 .nav__top a {
     font-size: 16px;
 }
@@ -127,6 +144,11 @@ ul li {
         #7a425e 87.53%
     );
     background-size: cover;
+}
+
+.logo__top > svg{
+    width: 78px;
+    height: 31px;
 }
 
 .banner {
@@ -418,6 +440,10 @@ ul li {
     position: absolute;
 }
 
+.service__link > p{
+    opacity: 0.5;
+}
+
 .team__link {
     font-size: 14px;
     line-height: 17px;
@@ -441,6 +467,10 @@ ul li {
     margin: 20px;
     padding: 20px;
     margin-bottom: 0;
+}
+
+.team__block > img {
+    display: none;
 }
 
 .contact {
@@ -674,8 +704,46 @@ footer {
 }
 
 @media (min-width: 767px) {
+    .header {
+        display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 1px 1px; 
+    grid-template-areas: 
+    "logo-hlegas nav-address"
+    "logo-hlegas navigation"; 
+    margin: 50px;
+}
+
+    .logo-hlegas { grid-area: logo-hlegas; }
+    .nav-address { grid-area: nav-address; }
+    .navigation { grid-area: navigation; }
+    
+    .logo-hlegas {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo__top > svg {
+        height: 62px;
+        width: 155px;
+    }
+
+    .languages {
+        margin-right: 20px;
+    }
+
+    .nav-address a, span {
+        margin-right: 20px;
+    }
+
     .menu__btn {
         display: none;
+    }
+
+    .main__menu li {
+        margin-right: 15px;
     }
 
     .main__menu {
@@ -704,7 +772,7 @@ footer {
 
     .banner {
         justify-content: center;
-        background-image: url("images/Frame\ 2.svg"), url("images/Symbol\ Long\ leg.svg");
+        background-image: url("images/Symbol\ Long\ leg.svg"),url("images/Frame\ 2.svg");
     }
     
     .team__block {
@@ -822,4 +890,7 @@ footer {
         padding-right: 40px;
     }
 
+    .nav__top {
+        justify-content: flex-end;
+    }
 }
