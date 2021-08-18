@@ -204,7 +204,7 @@ span.address-top {
     transform: rotate(45deg);
     border: 2px solid white;
     border-top: none;
-    border: 1;
+    border: 1px;
     border-left: none;
 }
 
