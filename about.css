@@ -8,6 +8,11 @@
     padding-left: 20px;
 }
 
+.logo__top > svg {
+    height: 62px;
+    width: 155px;
+}
+
 .about-info > h1 {
     font-size: 32px;
     line-height: 38px;
