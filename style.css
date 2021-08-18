@@ -147,7 +147,7 @@ span.address-top {
 }
 
 .gradient-wrap {
-    background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    background-image: linear-gradient(217deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 
 .logo__top > svg{
@@ -211,6 +211,14 @@ span.address-top {
 .top__content {
     min-height: 100vh;
     color: white;
+}
+
+.main__menu a {
+    color: white;
+}
+
+.main__menu a:hover {
+    color: rgba(240, 20, 90, 1);
 }
 
 .menu__btn {
@@ -966,6 +974,7 @@ footer {
     .slider__wrap {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
     }
 
     .slider__nav {
