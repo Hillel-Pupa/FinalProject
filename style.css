@@ -159,7 +159,7 @@ span.address-top {
     height: 100vh;
     align-items: center;
     text-align: center;
-    background-image: url("images/SymboLongleg.svg");
+    background-image: url("images/SymbolLongleg.svg");
     background-repeat: no-repeat;
     background-position-y: 150px;
     background-position-x: center;
@@ -204,8 +204,8 @@ span.address-top {
     transform: rotate(45deg);
     border: 2px solid white;
     border-top: none;
-    border: 1px;
-    border-left: none;
+    border-width: 1px 1px 0 0;
+    
 }
 
 .top__content {
@@ -794,7 +794,7 @@ footer {
 
     .banner {
         justify-content: center;
-        background-image: url("images/Symbol\ Long\ leg.svg"),url("images/Frame\ 2.svg");
+        background-image: url("images/SymbolLongleg.svg"),url("images/Frame2.svg");
     }
     
     .team__block {
